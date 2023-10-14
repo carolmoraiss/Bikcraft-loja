@@ -1,0 +1,74 @@
+.cabecalho-bg {
+  background-color: #000;
+  
+}
+
+.cabecalho-container {
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cabecalho-menu a {
+  font-size: 1,125rem;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+
+
+
+.cabecalho-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background-color: #fff;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+.cabecalho-menu a:hover:after {
+  width: 70%;
+}
+
+@media(width <= 800px) {
+  .cabecalho-menu a {
+    background-color: #111;
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+
+  .cabecalho-menu a::after {
+    display: none;
+  }
+
+  .cabecalho-menu a:hover {
+    background-color: #2e2e2e;
+  }
+}
+
+@media(width <= 600px) {
+  .cabecalho-menu {
+    gap: 12px;
+  }
+
+  .cabecalho-menu a {
+    padding: 8px 12px;
+    font-size: 0,875rem;
+  }
+}
