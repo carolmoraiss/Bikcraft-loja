@@ -6,3 +6,20 @@
   box-sizing: border-box;
   margin: 0 auto;
 }
+
+
+.link {
+  display: inline-block;
+  color: var(--cor-p1);
+  font-family: 500 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  max-width: 57%;
+  height: 4px;
+  background-color: var(--cor-p1);
+
+}
