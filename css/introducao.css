@@ -1,18 +1,12 @@
 .introducao-bg {
-  background-color: #000;
-  box-shadow: inset 0 -120px #fff;
+  background-color: var(--cor-12);
+  box-shadow: inset 0 -120px var(--cor-0);
   
 }
 
 .introducao-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
   display: grid;
-  box-sizing: border-box;
   grid-template-columns: 1fr 1fr;
-  padding-left: 20px;
-  padding-right: 20px;
   gap: 0px 40px;
 }
 
@@ -33,36 +27,28 @@
 
 .titulo {
   margin-bottom: 32px;
-  color: #fff;
-  font-size: 4rem;
-  line-height: 1.125;
-}
-
-.introducao-container span {
-  color: #FFBF00;
 }
 
 .introducao-paragrafo {
   margin-bottom: 20px;
-  color: #b2b2b2;
-  font-size: 1.5rem;
+  color: var(--cor-5);
   grid-column: 1;
-  line-height: 1.5;
 }
 
 .introducao-botao {
-  font-weight: bold;
+  font-weight: 600;
   display: inline-block;
-  color: #332200;
-  background: linear-gradient(#FFBF00 , #F2A50C );
+  color: var(--cor-p5);
+  background: linear-gradient(var(--cor-p1) , #F2A50C );
   padding: 15px 30px;
-  box-shadow: 0 20px 0 0 #fff;
+  box-shadow: 0 20px 0 0 var(--cor-0);
   border-radius: 4px;
   grid-row: 3;
   line-height: 1.33;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
   font-size: 1.125rem;
+  font-family: "Poppins";
 }
 
 .introducao-botao:hover {
@@ -81,9 +67,9 @@
 
 @media(width <= 800px) {
   .introducao-bg {
-    background-color: #111;
+    background-color: var(--cor-11);
     padding-top: 40px;
-    box-shadow: inset 0 -60px #fff;
+    box-shadow: inset 0 -60px var(--cor-0);
   }
 
   .introducao-container {

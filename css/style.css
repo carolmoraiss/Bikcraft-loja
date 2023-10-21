@@ -1,3 +1,7 @@
 @import "global.css";
+@import "css-utilitario/cores.css";
 @import "header.css";
 @import "introducao.css";
+@import "css-utilitario/utilitario.css";
+@import "css-utilitario/tipografia.css";
+@import "bicicletas.css";

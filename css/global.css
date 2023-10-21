@@ -2,6 +2,7 @@ body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 600px;
+  color: var(--cor-0);
 }
 
 a {
@@ -11,15 +12,28 @@ a {
 
 ul {
   list-style: none;
-  margin: 0px;
   padding: 0px;
 }
 
-h1, ul, p {
+h1,
+ ul,
+p,
+h2,
+ h3,
+ h4 {
   margin: 0px;
 }
 
 img {
   max-width: 100%;
   display: block;
+ 
+}
+
+.detalhe-ponto {
+  color: var(--cor-p1);
+}
+
+img[src$=".jpg"] {
+  border-radius: 4px;
 }
