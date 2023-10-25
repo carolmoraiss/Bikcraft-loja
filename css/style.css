@@ -1,12 +1,13 @@
-@import "global.css";
 @import "css-utilitario/cores.css";
 @import "css-utilitario/tipografia.css";
 @import "css-utilitario/utilitario.css";
-@import "home/header.css";
+@import "global/header.css";
 @import "home/introducao.css";
 @import "home/bicicletas.css";
 @import "home/tecnologia.css";
 @import "home/parceiros.css";
 @import "home/depoimento.css";
 @import "home/seguros.css";
-@import "home/rodape.css";
+@import "global/global.css";
+@import "global/rodape.css";
+@import "termos/termos.css";
