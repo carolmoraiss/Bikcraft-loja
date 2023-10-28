@@ -1,0 +1,151 @@
+.titulo-bg {
+  background-color: var(--cor-11);
+}
+
+.titulo  {
+  padding: 60px 20px;
+}
+
+.titulo h3 {
+  color: var(--cor-5);
+  text-transform: uppercase;
+}
+
+.titulo h2 {
+  color: var(--cor-0);
+  text-transform: lowercase;
+}
+
+.bicicletas-imagem img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.bicicletas-imagem {
+  position: relative;
+}
+
+ .bicicleta-preco {
+  color: var(--cor-0);
+  position: absolute;
+  background-color: var(--cor-12);
+  border-radius: 5px 0 0 5px;
+  display: inline-block;
+  padding: 8px 16px 8px 8px; 
+  top: 10px;
+  right: 0;
+}
+
+.bicicleta-lista {
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bicicletas h2 {
+  margin-bottom: 20px;
+  position: relative;
+  
+}
+
+.bicicletas h2::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  display: block;
+  background-color: var(--cor-p1);
+  position: absolute;
+  top: -10px;
+  margin-bottom: 8px;
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.bicicletas-conteudo h2,
+.bicicletas-conteudo p {
+  grid-column: 1 / -1;
+}
+
+.bicicletas-conteudo p {
+   color: var(--cor-8);
+   margin-bottom: 32px;
+}
+
+.bicicletas-conteudo a {
+  place-self: end;
+}
+
+.bicicleta-lista-qualidade li {
+  display: flex;
+  color: var(--cor-8);
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.bicicleta-bg:nth-child(odd) {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+ 
+}
+
+.bicicleta-bg:nth-child(odd) h2,
+.bicicleta-bg:nth-child(odd) p,
+.bicicleta-bg:nth-child(odd) li {
+  color: var(--cor-5);
+}
+
+.botao::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../img/icones/seta.svg");
+  transition: transform 0.3s;
+}
+
+.botao:hover::after {
+  transform: translateX(4px);
+}
+
+@media(width <= 800px) {
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .bicicleta-bg:nth-child(odd) {
+    background: var(--cor-11);
+  }
+}
+
+@media(width <= 600px) {
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-lista {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+
+  .bicicletas a {
+    place-self: start;
+  }
+}
