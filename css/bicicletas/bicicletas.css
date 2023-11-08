@@ -8,12 +8,10 @@
 
 .titulo h3 {
   color: var(--cor-5);
-  text-transform: uppercase;
 }
 
 .titulo h2 {
   color: var(--cor-0);
-  text-transform: lowercase;
 }
 
 .bicicletas-imagem img {
