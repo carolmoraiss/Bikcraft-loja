@@ -3,6 +3,8 @@
   
 }
 
+
+
 .cabecalho-container {
   gap: 25px;
   padding-top: 20px;
@@ -38,9 +40,12 @@
   transition: 0.3s;
   position: absolute;
 }
-.cabecalho-menu a:hover:after {
+.cabecalho-menu a:hover::after,
+.cabecalho-menu a.ativo::after {
   width: 70%;
 }
+
+
 
 @media(width <= 800px) {
   .cabecalho-menu a {
