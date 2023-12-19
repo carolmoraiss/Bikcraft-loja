@@ -42,11 +42,27 @@ function mostrarElementosAoClick() {
     }
 }
 
-
-
+function trocarImagemGaleria() {
+  const galeria = document.querySelectorAll(".bicicleta-imagens img");
+  const galeriaContainer = document.querySelector(".bicicleta-imagens");
+  
+  if(galeria.length) {
+    function trocarImagem(event) {
+      const img = event.currentTarget;
+      const media = matchMedia("(min-width: 922px)").matches;
+      if(media) {
+        galeriaContainer.prepend(img)
+     }
+    }
+  }
+    galeria.forEach((item) => {
+      item.addEventListener("click", trocarImagem)
+    })
+}
 
 
 initLinkAtivo();
 ativarElementosByParametros();
 mostrarElementosAoClick();
+trocarImagemGaleria();
 
