@@ -24,6 +24,29 @@ function ativarElementosByParametros() {
     })
 }
 
+
+function mostrarElementosAoClick() {
+    const perguntaFrequenteLista = document.querySelectorAll(".perguntas-item dt");
+
+    if(perguntaFrequenteLista.length) {
+    
+      perguntaFrequenteLista[0].nextElementSibling.classList.add("ativo");
+    
+      function initItem() {
+        this.nextElementSibling.classList.toggle("ativo");
+      } 
+    
+      perguntaFrequenteLista.forEach((item) => {
+        item.addEventListener("click", initItem)
+      })
+    }
+}
+
+
+
+
+
 initLinkAtivo();
 ativarElementosByParametros();
+mostrarElementosAoClick();
 
