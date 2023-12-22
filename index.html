@@ -13,8 +13,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
-  <title>Bikcraft - Bicicletas Elétricas</title>
+
+
+
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.">
+  <title>Bikcraft - Bicicletas Elétricas</title>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
@@ -35,11 +39,11 @@
   <main class="introducao-bg">
     <div class="introducao-container container">
       <div class="introducao-conteudo">
-        <h1 class="titulo font-1-xxl">Bicicletas feitas sob medidas<span class="detalhe-ponto">.</span></h1>
-        <p class="introducao-paragrafo texto-medio">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft<span class="detalhe-ponto">.</span></p>
-        <a href="bicicletas.html" class="introducao-botao">Escolha a sua</a>
+        <h1 class="titulo font-1-xxl fadeInDown" data-anime="200">Bicicletas feitas sob medidas<span class="detalhe-ponto">.</span></h1>
+        <p class="introducao-paragrafo texto-medio fadeInDown" data-anime="350">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft<span class="detalhe-ponto">.</span></p>
+        <a href="bicicletas.html" class="introducao-botao fadeInDown" data-anime="450">Escolha a sua</a>
       </div>
-      <picture>
+      <picture data-anime="550" class="fadeInDown">
         <source media="(width <= 800px)" srcset="img/bicicletas/nimbus.jpg">
         <img src="img/fotos/introducao.jpg" alt="Bicicleta">
       </picture>
@@ -189,7 +193,7 @@
     </div>
 
   </footer>
-
+  <script src="./js/plugins/simple-anime.js"></script>;
   <script src="js/script.js"></script>
 </body>
 

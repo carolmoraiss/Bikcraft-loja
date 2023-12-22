@@ -60,9 +60,15 @@ function trocarImagemGaleria() {
     })
 }
 
-
+  
 initLinkAtivo();
 ativarElementosByParametros();
 mostrarElementosAoClick();
 trocarImagemGaleria();
 
+
+//animation 
+
+if(window.SimpleAnime) {
+  new SimpleAnime();
+}
